@@ -1,5 +1,8 @@
+import MainPage from "./pages/MainPage";
+//import "./styles/main.css"
+
 function App() {
-  return ( <></>);
+  return <MainPage></MainPage>;
 }
 
 export default App;
