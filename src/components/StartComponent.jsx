@@ -1,16 +1,16 @@
 import React from 'react';
+import Button from "./Button";
 
-const StartComponent = ({setShow}) => {
+const StartComponent = ({onClick, state}) => {
     return (
-        <div className="Start">
-            <h1>To start:</h1>
+        <div className="StartMenu">
+            <h1>To begin</h1>
             <h5>1)Download App</h5>
-            <h5>2)Register</h5>
-            <h5>3)Connect your devices</h5>
-            <h5>4)Make personal preferences</h5>
-            <h5>5)Enjoy your using!</h5>
-            <button onClick={/*setShow("")*/ () => {console.log("")
-                setShow("")}}>Close</button>
+            <h5>2)Register in App</h5>
+            <h5>3)Connect devices</h5>
+            <h5>4)Change their settings</h5>
+            <h5>5)Enjoy using!</h5>
+            <Button text="Close" onClick={onClick} state={state}></Button>
         </div>
     );
 };

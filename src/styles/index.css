@@ -44,6 +44,7 @@
 }
 
 .Menu{
+    width: fit-content;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
@@ -55,4 +56,52 @@
     padding: 50px;
     background-color: #e73c7e;
 
+}
+
+.Component{
+    display: flex;
+    flex-direction: column;
+}
+.Component h1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    align-self: center;
+}
+.Component a{
+    transition: 2s;
+    align-self: center;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin: 25px;
+    border-radius: 20px;
+}
+.Component a:hover{
+    padding: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.Component .button{
+    align-self: center;
+}
+
+.StartMenu{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.StartMenu h5{
+    margin: 5px;
+}
+
+.InfoMenu{
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.InfoMenu h4{
+    margin: 10px;
 }
